@@ -1,0 +1,120 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Celebrate Spaces</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="icon">
+                <a href="index.html"><img  src="pic.png" alt="Celebrate Spaces"></a>
+                <h1>Celebrate Spaces</h1>
+            </div>
+            <div class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Venue</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+    
+                    <li><a href="index.html">Vendor</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="Signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>iv>
+    </nav>
+    <section class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="process_contact.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

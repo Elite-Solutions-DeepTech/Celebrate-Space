@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Halls Website</title>
+    <style>
+        .hero.container {
+  height: 100vh;
+  background-image: url("venue1.png");                                                                            
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+
+}
+.icon img{
+    width: auto;
+    height: 70px;
+    float: left;
+    border-radius: 100px;
+
+    
+}
+nav .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  max-width: 100%;
+  height: 10vh;
+  padding: 20px;
+  margin: 0 auto;
+  background: rgba(244, 211, 211, 0.45);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 0 15px;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 29px;
+  text-align: right;
+}
+
+.nav-links li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: orangered;
+}
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            height: 520px;
+            margin: auto;
+            padding: 20px;
+            gap:20px;
+        }
+        .hall {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .hall img {
+            max-width: 300px;
+            height: 200px;
+            padding: 30px;
+            border-radius: 5px;
+        }
+        .hall h2 {
+            margin: top 20px;
+            margin: right 10px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+        }.hall h2{
+            padding-left: 10px;
+        }
+        .btn {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="icon">
+                <a href="index.html"><img  src="pic.png" alt="Celebrate Spaces"></a>
+                <h1>Celebrate Spaces</h1>
+            </div>
+            <div class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Venue</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+    
+                    <li><a href="index.html">Vendor</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="Signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <header>
+        <h1>Resorts</h1>
+    </header>
+    
+    <div class="container">
+        <div class="hall">
+            <img src="hall4.jpg" alt="Hall 1">
+            <h2>Palm Resort</h2>
+            <p>
+                Enjoy luxurious accommodations, world-class amenities, and a variety of activities including snorkeling, kayaking, and beach volleyball..</p>
+            <p></p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+        
+        <div class="hall">
+            <img src="hall5.jpg" alt="Hall 2">
+            <h2>Bheemli Resort</h2>
+            <p>
+                Nestled in the heart of the mountains, the Mountain Haven Resort provides a serene surrounded by breathtaking natural beauty.</p>
+            <p></p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+        
+        <div class="hall">
+            <img src="hall6.jpg" alt="Hall 3">
+            <h2>Sandy Beach Resort</h2>
+            <p>
+                Designed with families in mind, the Family Fun Resort offers a wide array of activities and amenities to keep everyone entertained.</p>
+            <p></p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+     </div>
+    <footer>
+        <p>&copy; 2024 Function Halls. All rights reserved.</p>
+    </footer>
+</body>
+</html>

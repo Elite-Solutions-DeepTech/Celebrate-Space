@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Halls Website</title>
+
+    <style>
+        .hero.container {
+            height: 100vh;
+            background-image: url("venue1.png");
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .icon img {
+            width: auto;
+            height: 70px;
+            float: left;
+            border-radius: 100px;
+
+
+        }
+
+        nav .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 100%;
+            height: 10vh;
+            padding: 20px;
+            margin: 0 auto;
+            background: rgba(244, 211, 211, 0.45);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(11.5px);
+            -webkit-backdrop-filter: blur(11.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            padding: 0 15px;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 29px;
+            text-align: right;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links li a:hover {
+            color: orangered;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            height: 520px;
+            margin: auto;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .hall {
+            margin-bottom: -12px;
+
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .hall img {
+            max-width: 300px;
+            height: 200px;
+            padding: 30px;
+            border-radius: 5px;
+        }
+
+        .hall h2 {
+            margin: top 20px;
+            margin: right 10px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+
+            bottom: 0;
+            width: 100%;
+        }
+
+        .hall h2 p {
+            padding-left: 10px;
+            height: 100px;
+
+        }
+
+        .btn {
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        /* .hall .btn2{
+            margin-top: 10px;
+        }
+
+         #bttn {
+            align-items: end;
+        } */
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <div class="icon">
+                <a href="index.html"><img  src="pic.png" alt="Celebrate Spaces"></a>
+                <h1>Celebrate Spaces</h1>
+            </div>
+            <div class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Venue</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+    
+                    <li><a href="index.html">Vendor</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="Signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <header>
+        <h1>Banquet Halls</h1>
+    </header>
+
+    <div class="container">
+        <div class="hall">
+            <img src="hall1.jpg" alt="Hall 1">
+            <h2>SNR Function Hall</h2>
+            <p>
+                The Function Hall is perfect for large gatherings, offering high ceilings, natural light, and flexible
+                seating arrangements for up to 300 attendees.</p>
+            <p>Capacity: 300 people</p>
+            <a href="book.html" class="btn">Book Now</a>
+        </div>
+
+        <div class="hall">
+            <img src="hall2.jpg" alt="Hall 2">
+            <h2>Vennela Function Hall</h2>
+            <p>
+                Our function hall provides you a comfortable class look for your weddings.</p>
+            <p>Capacity: 150 people</p>
+            <a id="bttn" href="book.html" class="btn btn2">Book Now</a>
+        </div>
+
+        <div class="hall">
+            <img src="hall3.jpg" alt="Hall 3">
+            <h2>RK Function Hall</h2>
+            <p>
+                Our function hall offers a luxurious and spacious environment perfect for weddings.This event hall
+                creates a memorable experience for your special occasion.</p>
+            <p>Capacity: 500 people</p>
+            <a href="book.html" class="btn">Book Now</a>
+
+        </div>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Function Halls. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

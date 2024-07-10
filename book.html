@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrate Spaces</title>
+    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="books.css">
+</head>
+<body>
+    
+
+    <nav>
+        <div class="container">
+            <div class="icon">
+                <a href="index.html"><img  src="pic.png" alt="Celebrate Spaces"></a>
+                <h1>Celebrate Spaces</h1>
+            </div>
+            <div class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Venue</a></li>
+                    <li><a href="about us.html">About Us</a></li>
+    
+                    <li><a href="index.html">Vendor</a></li>
+                    <li><a href="index.html">Blog</a></li>
+                    <li><a href="index.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+    
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="Signup.html">Sign Up</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+      <main>
+        
+        <section class="booking-form">
+            <h2>Book a Hall</h2>
+            <form action="" name="submit-to-google-sheet">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" required>
+
+                <input type="submit" value="Submit">
+            <a href="home1.html" class="btn">Back to Home</a>
+	
+            </form>
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbwOfYMHuX0tYEl4sMRLyv4P9Tx083rZoiygIvgqOTTpDVHjeWfN7gKiOK_JUSlJV7j7BQ/exec'
+                const form = document.forms['submit-to-google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        console.log('Success!', response);
+                        window.alert("Data Successfully submitted");
+                        form.reset();
+        
+                    })
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+
+        </section>
+    
+    </main>
+
+    </body>
+</html>
